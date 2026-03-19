@@ -233,3 +233,76 @@ section {
         font-size: 18px;
     }
 }
+/* HOME LAYOUT WITH PHOTO */
+
+.home {
+    background: #e6f2ff;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container */
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+
+/* Oval Photo */
+/* Oval Photo (Larger Size) */
+.photo-oval {
+    width: 280px;      /* increased width */
+    height: 400px;     /* increased height */
+    border-radius: 50% / 40%;
+    overflow: hidden;
+    border: 4px solid #0077ff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Image inside oval */
+.photo-oval img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;          /* fills entire oval */
+    object-position: top;       /* keeps face/hair visible */
+}
+
+/* Text */
+.home-text {
+    text-align: left;
+}
+
+.home-text h1 {
+    font-size: 40px;
+}
+
+.home-text span {
+    color: #0077ff;
+}
+
+.home-text p {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #555;
+}
+
+#typing {
+    margin-top: 10px;
+    font-size: 22px;
+    color: #555;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-text {
+        text-align: center;
+    }
+}
